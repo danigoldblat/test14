@@ -1,0 +1,188 @@
+body {
+    background: rgb(12, 11, 15);
+}
+
+header {
+    position:relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 1px 4px grey;
+}
+
+.logo {
+    background: rgb(0, 219, 54);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.website-name {
+    color: rgb(0, 219, 54);
+}
+
+.online-button {
+    border-radius: 26%;
+    color: rgb(0, 219, 54);
+    background: rgb(12, 11, 15);
+    border-color: rgb(0, 219, 54);
+    padding: 10px;
+}
+
+.point1 {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(0, 219, 54);
+    margin: 0px 7px 2px 7px;
+}
+
+.point2 {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(0, 219, 54);
+    margin: 0px 7px 2px 7px;
+}
+
+main {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: minmax(2rem, auto);
+    justify-self: center;
+    min-height: 80vh;
+    margin-top: 4%;
+    align-self: center;
+}
+
+.box1 {
+    display: grid;
+    grid-area: 1 / 1 / 5 / 10;
+    width: 100vh;
+    height: 7%;
+    grid-row: span 4;
+    box-shadow: 0px 1px 4px grey;
+}
+
+
+.scanner {
+    grid-area: 1 / 1 / 4 / 2;
+    overflow: hidden;
+    height: 100%;
+    background: radial-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 1)),
+        linear-gradient(90deg, dimgrey 1px, transparent 1px),
+        linear-gradient(dimgrey 1px, grey 1px);
+    background-size: 100%, 2px 1px, 1px 2px;
+}
+
+
+
+.radar {
+    position: relative;
+    overflow: hidden;
+    /* top: 50%;
+    left: 50%; */
+    width: 248px;
+    height: 248px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
+        inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+    background:
+        repeating-radial-gradient(transparent 0 23px, #287a33 24px 26px, #0000 27px),
+        linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+        linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50% no-repeat,
+        linear-gradient(#333, #111);
+    background-size: 100%, 218px 218px, 218px 218px, 100%;
+}
+
+.sweep {
+    position: absolute;
+    box-sizing: border-box;
+    top: 16px;
+    left: 16px;
+    border-right: solid 1px hsla(145, 50%, 40%, .3);
+    width: 108px;
+    height: 108px;
+    border-radius: 100% 0 0 0;
+    transform-origin: 100% 100%;
+    background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, hsla(145, 50%, 40%, 1));
+    animation: sweep 5s infinite linear;
+}
+
+.text {
+    justify-self: end;
+
+}
+
+.text1 {
+    grid-area: 2 / 2 / 3 / 3;
+    color: rgb(0, 219, 54);
+    font-size: xx-large
+}
+
+.text2 {
+
+    color: white;
+}
+
+.text3 {
+    color: rgb(0, 219, 54);
+    font-size: xx-large
+}
+
+.text4 {
+    color: white;
+}
+
+.button {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    top: 80%;
+    bottom: 100%;
+    position: sticky;
+    justify-content: space-evenly;
+    align-items: end;
+    box-shadow: 0px 1px 4px grey;
+
+
+}
+
+.img2 {
+    width: 10px;
+    height: 10px;
+    color: white;
+}
+
+.img3 {
+    width: 10px;
+    height: 10px;
+    color: white;
+}
+
+
+
+
+
+
+@keyframes sweep {
+    to {
+        transform: rotate(360deg);
+    }
+}
